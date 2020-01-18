@@ -3,6 +3,61 @@ body {
     padding: 0;
 }
 
+#container {
+    width: 610px;
+    height: 610px;
+    margin: 5px auto;
+}
+
+#placar {
+    width: 588px;
+    height: 40px;
+    margin-bottom: 5px;
+    padding: 10px;
+    background-color: #003459;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+    box-shadow: 1px 1px 5px 5px rgba(0, 52, 89, 0.1);
+}
+
+#placar span {
+    color: #fff;
+    text-shadow: 3px 3px 3px #00171f;
+    font-size: 30px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+#player-1 {
+    float: left;
+}
+
+#player-2 {
+    float: right;
+}
+
 #game {
-    background-color: #000;
+    width: 100%;
+    height: 100%;
+    background-color: #00171f;
+    box-shadow: 1px 1px 5px 5px rgba(0, 52, 89, 0.1);
+    border-radius: 5px;
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: 200px;
+    grid-column-gap: 5px;
+    grid-row-gap: 5px;
+}
+
+.box {
+    background-color: #003459;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.box span {
+    color: #fff;
+    text-shadow: 3px 3px 3px #00171f;
+    font-size: 125px;
 }

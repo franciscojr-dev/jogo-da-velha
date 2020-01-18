@@ -3,6 +3,7 @@ Jogo para fins didáticos
 
 ### Processo de desenvolvimento
 - [x] Estrutura básica
-- [ ] Interface gráfica
+- [x] Interface gráfica
+- [ ] Mecânica do jogo
 - [ ] Modo single player
 - [ ] Modo multiplayer
