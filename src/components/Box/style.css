@@ -1,0 +1,18 @@
+.box {
+    background-color: #003459;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.box:hover {
+    opacity: 0.5;
+}
+
+.box span {
+    color: #fff;
+    text-shadow: 3px 3px 3px #00171f;
+    font-size: 125px;
+    text-transform: uppercase;
+}
