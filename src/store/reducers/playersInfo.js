@@ -1,5 +1,7 @@
 const INITIAL_STATE = {
     started: false,
+    result: '',
+    markerList: Array(9),
     player1: {
         score: 0,
         marker: ''
@@ -31,10 +33,28 @@ export default function playersInfo(state = INITIAL_STATE, action) {
             stateReturn = {
                 ...state,
                 started: true,
-                [action.infos.player]: {
+                player1: {
                     score: 0,
-                    marker: action.infos.marker,
+                    marker: action.infoPlayers.player1,
+                },
+                player2: {
+                    score: 0,
+                    marker: action.infoPlayers.player2,
                 }
+            };
+            break;
+        case 'RESULT_GAME':
+            stateReturn = {
+                ...state,
+                result: action.result
+            };
+            break;
+        case 'MARKER_LIST':
+            let markerList = state.markerList;
+            markerList[action.markerList.position] = action.markerList.marker;
+            stateReturn = {
+                ...state,
+                markerList
             };
             break;
         default:

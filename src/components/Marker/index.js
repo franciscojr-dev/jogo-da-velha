@@ -8,7 +8,7 @@ const Marker = () => {
         <>
             {
                 boxes.map((box, key) => (
-                    <Box key={key} />
+                    <Box key={key} refArray={key} />
                 ))
             }
         </>
