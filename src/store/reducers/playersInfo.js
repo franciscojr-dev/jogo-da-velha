@@ -57,6 +57,13 @@ export default function playersInfo(state = INITIAL_STATE, action) {
                 markerList
             };
             break;
+
+        case 'RESET_MARKER_LIST':
+            stateReturn = {
+                ...state,
+                markerList: Array(9)
+            };
+            break;
         default:
             stateReturn = state;
     }

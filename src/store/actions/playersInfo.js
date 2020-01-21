@@ -30,3 +30,9 @@ export function markerList(markerList) {
         markerList
     }
 }
+
+export function resetMarkerList() {
+    return {
+        type: 'RESET_MARKER_LIST'
+    }
+}
